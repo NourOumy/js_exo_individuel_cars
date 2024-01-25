@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(156, 175, 194);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        width: 700px;
+        border: 2px solid rgb(102, 101, 101);
+        border-radius: 10px;
+    }
+}
+h1{
+    color: rgb(81, 81, 81);
+}
+.champs{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    .text{
+        width: 60%;
+        background-color: rgb(229, 226, 226);
+        color: #f173ac;
+        border-radius: 5px 0px 0px 5px;
+       
+    }
+    .submit, .text{
+        padding: 8px;
+        border: 0;
+         font-size: 18px;
+    }
+    .submit{
+        background-color: #f173ac;
+        color: rgb(81, 81, 81);
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        border-radius: 0px 5px 5px 0px;
+    }
+}
+
+.liste{
+    color: rgb(102, 101, 101);
+    border: 2px solid rgb(218, 216, 216);
+    border-radius: 10px;
+    margin: 100px;
+    padding: 20px;
+
+    p{
+      font-size: 18px;  
+    }
+    
+
+    span{
+        padding-left: 20px;
+    }
+}
