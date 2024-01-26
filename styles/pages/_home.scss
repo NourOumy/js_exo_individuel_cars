@@ -35,7 +35,7 @@ h1{
     .submit, .text{
         padding: 8px;
         border: 0;
-         font-size: 18px;
+        font-size: 18px;
     }
     .submit{
         background-color: #f173ac;
@@ -44,6 +44,7 @@ h1{
         font-size: 12px;
         letter-spacing: 0.2em;
         border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
     }
 }
 
@@ -53,13 +54,26 @@ h1{
     border-radius: 10px;
     margin: 100px;
     padding: 20px;
-
-    p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nothing{
+            font-size: 20px;
+            color: #f173ac;
+        }
+      p{
       font-size: 18px;  
     }
     
-
     span{
         padding-left: 20px;
+        cursor: pointer;
+    }  
     }
+    
 }
