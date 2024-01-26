@@ -26,6 +26,12 @@ submit.addEventListener("click", function(){
 allspans.forEach(function(allspan){
     allspan.addEventListener("click", function(){
         allspan.parentElement.remove()
+        allspans = document.querySelectorAll("span");
+
+          if (allspans.length ==0) {
+            nothing.innerHTML=" Il n'y a rien dans votre list pour le moment"
+
+          }
     })
 })
 }
@@ -42,5 +48,5 @@ toadd.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
         submit.click();
     }
-});
+})
 
