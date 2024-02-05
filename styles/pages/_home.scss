@@ -1,79 +1,49 @@
 body{
-    background-color: rgb(156, 175, 194);
+    background-color: gray;
     height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
     .wrapper{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 20px;
-        width: 700px;
-        border: 2px solid rgb(102, 101, 101);
-        border-radius: 10px;
-    }
-}
-h1{
-    color: rgb(81, 81, 81);
-}
-.champs{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    .text{
-        width: 60%;
-        background-color: rgb(229, 226, 226);
-        color: #f173ac;
-        border-radius: 5px 0px 0px 5px;
-        outline: none;
-       
-    }
-    .submit, .text{
-        padding: 8px;
-        border: 0;
-        font-size: 18px;
-    }
-    .submit{
-        background-color: #f173ac;
-        color: rgb(81, 81, 81);
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 0.2em;
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;
+        width: 800px;
+        p{
+            color: rgb(5, 49, 108);
+            font-weight: bold;
+            padding-bottom: 20px;
+            span{
+                border-bottom: 1px solid;
+                font-size: 20px;
+                padding-left: 5px;
+                padding-right: 5px ;
+            }
+        }
     }
 }
 
-.liste{
-    color: rgb(102, 101, 101);
-    border: 2px solid rgb(218, 216, 216);
-    border-radius: 10px;
-    margin: 100px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .nothing{
-            font-size: 20px;
-            color: #f173ac;
-        }
-      p{
-      font-size: 18px;  
+.cars{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.car,.winner{
+    width: 100px;
+    height: 100px;
+    img{
+        width: 100px;
+        aspect-ratio: 1/1;
+        
     }
-    
-    span{
-        padding-left: 20px;
-        cursor: pointer;
-    }  
-    }
-    
+}
+
+.winner{
+    transition: 1s all ease-in-out;
 }

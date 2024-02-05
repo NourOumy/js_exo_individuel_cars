@@ -1,0 +1,8 @@
+briefing "Win a test drive"
+1/ Créer un html avec 16 images
+afin de gagner le test drive, l'utilisateur doit clicker sur les images
+Une seule image est gagante
+Derrière celles-ci, se cache une image qui détermine s'il a gagné ou non 
+L'utilisateur a droit à 5 clicks (visible à l'aide d'un décompte "il vous reste x chances")
+Si l'utilisateur a épuisé toutes ses chances, tout disparait et s'affiche "Vous avez épuisé toutes vos chnaces"
+Si l'utilisateur trouve l'image gagnante, celle-ci s'agrandit et la phrase "vous avez gagné !" s'affiche
