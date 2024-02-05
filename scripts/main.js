@@ -28,8 +28,13 @@ let carsDiv = document.querySelector(".cars"),
 })
 })
 
+// functions
+
 function dispnone(element){
     element.style.display ="none"
+}
+function changeWidth (cible,mesure){
+    cible.style.width = `${mesure}px`
 }
 
 // event click gagnant
@@ -39,13 +44,11 @@ winner.addEventListener("click",function(){
     testdrive.src = "images/testdrive.jpg"
     allcar.forEach(function(car){
         dispnone(car)
-        // car.style.display= "none"
     })
     carsDiv.style.display="inline"
     dispnone(titles)
-    // titles.style.display="none"
-    winner.style.width= "400px"
-    testdrive.style.width="400px"
+    changeWidth(winner,400)
+    changeWidth(testdrive,400)
     body.innerHTML+=`
     <h1>Vous avez gagné !</h1>`
 })
